@@ -1,12 +1,71 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar {
+    background-color: lightgray;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-header {
+    background-color: blue;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+#div-list {
+    width: 65%;
+    background-color: lawngreen;
+    display: flex;
+}
+
+ul.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+a { 
+    color: red;
+    border-radius: 15%;
+    padding: 40% 25% 40% 25%;
+    text-decoration: none; 
+}
+a:visited { 
+    text-decoration: none; 
+}
+a:hover { 
+    transition: .5s;
+    text-decoration: none;
+    background-color: black;
+}
+a:focus { 
+    text-decoration: none; 
+}
+a:hover, a:active { 
+    text-decoration: none; 
+}
+
 #welcome-section {
     height: 100vh;
 }
 
-#navbar {
-    left: 0px;
-    position: fixed;
-    top: 0px;
+#lastnav {
+    right: 1vw;
 }
+
 
 @media only screen and (max-width: 800px) {
 
