@@ -1,6 +1,10 @@
 body {
     background-color: whitesmoke;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-top: 4.3rem;
 }
 
 #navbar {
@@ -63,16 +67,90 @@ a:hover, a:active {
 }
 
 #welcome-section {
-    margin: 4.3rem -8px 0px -8px;
-    background-color: red;
+    background: linear-gradient(215deg, grey, lightgrey);
+    /* margin-top:4.3rem; */
     height: 100vh;
+    text-align: center;
 }
 
 #lastnav {
     right: 1vw;
 }
 
+#about {
+    display: flex;
+    flex-direction: row;
+}
+
+#text-div {
+    width: 50%;
+    background-color: tomato;
+    text-align: center;
+}
+
+#photo-div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: teal;
+}
+
+.photo {
+    border-radius: 50%;
+    margin-right: 15%;
+}
+
+#projects {
+    text-align: center;
+    background-color: red;
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: green
+}
+
+
+.project-tile {
+    background-color: violet;
+    width: 27vw;
+    height: 25vh;
+}
+
+#contact {
+    height: 30vh;
+    background-color:grey;
+    text-align:  center;
+}
+
+footer {
+    padding-bottom: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 3.1rem;
+    background-color:black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
 
 @media only screen and (max-width: 800px) {
-
+    .flexrow {
+        display: flex;
+        flex-direction: column;
+        height: 190vh;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: green
+    }
+    .project-tile {
+        background-color: violet;
+        width: 70vw;
+        height: 50vh;
+    }
+    
 }
