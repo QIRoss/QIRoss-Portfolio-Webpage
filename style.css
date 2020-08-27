@@ -41,7 +41,7 @@ ul.nav-list {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
     padding: 0;
     list-style: none;
@@ -66,6 +66,7 @@ a:hover, a:active {
     text-decoration: none; 
 }
 
+
 #welcome-section {
     background: linear-gradient(215deg, grey, lightgrey);
     /* margin-top:4.3rem; */
@@ -80,19 +81,23 @@ a:hover, a:active {
 #about {
     display: flex;
     flex-direction: row;
+    margin-top: 4vh;
 }
 
 #text-div {
     width: 50%;
-    background-color: tomato;
+    height: auto;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    justify-content: center;
+    /* background-color: tomato; */
     text-align: center;
 }
 
 #photo-div {
     width: 50%;
-    display: flex;
     justify-content: center;
-    background-color: teal;
+    /* background-color: teal; */
 }
 
 .photo {
@@ -102,7 +107,14 @@ a:hover, a:active {
 
 #projects {
     text-align: center;
-    background-color: red;
+    /* background-color: red; */
+}
+
+#projects h1{
+    margin: 0px;
+    background-color: darkslategrey;
+    color: white;
+    border: solid darkslategrey 1vh;
 }
 
 .flexrow {
@@ -111,12 +123,12 @@ a:hover, a:active {
     height: 30vh;
     align-items: center;
     justify-content: space-evenly;
-    background-color: green
+    /* background-color: green */
 }
 
 
 .project-tile {
-    background-color: violet;
+    background-color: grey;
     width: 27vw;
     height: 25vh;
 }
@@ -125,6 +137,13 @@ a:hover, a:active {
     height: 30vh;
     background-color:grey;
     text-align:  center;
+}
+
+#contact h1 {
+    margin: 0px;
+    background-color: darkslategrey;
+    color: white;
+    border: solid darkslategrey 1vh;
 }
 
 footer {
@@ -139,18 +158,47 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
+    #navbar {
+        display: flex;
+        flex-direction: row;
+    }
+    #nav-header{
+        width: 40vw;
+        height: auto;
+    }
+    #nav-header h1{
+        font-size: 4vw;
+    }
+    #div-list h2 {
+        font-size: 3vw;
+    }
+
     .flexrow {
         display: flex;
         flex-direction: column;
-        height: 190vh;
+        height: 150vh;
         align-items: center;
         justify-content: space-evenly;
-        background-color: green
+        /* background-color: green */
     }
     .project-tile {
-        background-color: violet;
-        width: 70vw;
-        height: 50vh;
+        /* background-color: violet; */
+        width: 72vw;
+        height: 40vh;
+    }
+    #about {
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 4vh; */
+    }
+    #text-div {
+        width: 50%;
+        height: auto;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        justify-content: center;
+        /* background-color: tomato; */
+        text-align: center;
     }
     
 }
