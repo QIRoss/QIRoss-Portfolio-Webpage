@@ -37,7 +37,7 @@ ul.nav-list {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -62,7 +62,9 @@ a:focus {
 a:hover, a:active { 
     text-decoration: none; 
 }
-
+.project-tile a{
+    color: grey;
+}
 
 #welcome-section {
     background: linear-gradient(215deg, grey, lightgrey);
@@ -113,7 +115,7 @@ a:hover, a:active {
 .flexrow {
     display: flex;
     flex-direction: row;
-    height: 30vh;
+    height: 38vh;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -121,8 +123,8 @@ a:hover, a:active {
 
 .project-tile {
     background-color: grey;
-    width: 27vw;
-    height: 25vh;
+    width: 30vw;
+    height: 30vh;
 }
 
 #contact {
